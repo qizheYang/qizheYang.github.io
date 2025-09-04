@@ -1,0 +1,92 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    color: #2a2a2a;
+    line-height: 1.6;
+    padding-top: 70px; /* offset for fixed header */
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav a {
+    margin-left: 1.5rem;
+    font-weight: 500;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #39335A;
+    margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+    color: #39335A;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5A5087;
+    text-decoration: underline;
+}
+
+/* Buttons (if needed) */
+button {
+    background-color: #39335A;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5A5087;
+}
+
+/* Paragraphs and spacing */
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+}
