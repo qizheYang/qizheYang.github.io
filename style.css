@@ -104,8 +104,10 @@ p {
 }
 
 .footer-bar img {
-    height: 24px;
-    width: auto;
+    height: 20px;       /* fixed size */
+    width: 20px;
+    object-fit: contain;
+    display: inline-block;
     vertical-align: middle;
 }
 
