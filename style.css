@@ -10,7 +10,8 @@ body {
     background-color: #f9f9f9;
     color: #2a2a2a;
     line-height: 1.6;
-    padding-top: 70px; /* offset for fixed header */
+    padding-top: 70px;   /* offset for fixed header */
+    padding-bottom: 70px; /* offset for fixed footer */
 }
 
 /* Header */
@@ -83,10 +84,38 @@ p {
     font-size: 1.1rem;
 }
 
-/* Footer */
-footer {
+/* Footer Bar (Fixed) */
+.footer-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     text-align: center;
-    margin-top: 2rem;
+    padding: 0.8rem 1rem;
     font-size: 0.9rem;
-    color: #888;
+    color: #555;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.footer-bar img {
+    height: 24px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.footer-bar a {
+    color: #39335A;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-bar a:hover {
+    color: #5A5087;
+    text-decoration: underline;
 }
