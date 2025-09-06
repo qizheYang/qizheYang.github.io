@@ -121,3 +121,30 @@ p {
     color: #5A5087;
     text-decoration: underline;
 }
+
+.profile-img {
+    display: block;
+    margin: 0 auto 1rem auto; /* center image, add space below */
+    max-width: 200px; /* scale down if too large */
+    border-radius: 50%; /* makes it circular */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* soft shadow */
+}
+
+.project-list {
+    list-style: none;
+    padding: 0;
+}
+
+.project-list li {
+    margin-bottom: 2rem;
+}
+
+.project-list h2 {
+    margin-bottom: 0.5rem;
+    color: #39335A;
+}
+
+.project-list p {
+    margin: 0;
+    line-height: 1.6;
+}

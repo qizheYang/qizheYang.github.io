@@ -2,12 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Projects - Qizhe Yang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-Projects to be shown here.
+<!-- Fixed Header -->
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="cv.pdf" target="_blank">CV</a>
+        <a href="projects.html">Projects</a>
+        <a href="index-cn.html">中文</a>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <h1>Projects</h1>
+    <ul class="project-list">
+        <li>
+            <h2><a href="https://walkhuntington.yangqizhe.com" target="_blank">ShadowWalker – The Huntington</a></h2>
+            <p>
+                Web app built with Python (Flask) and HTML/CSS. Features shortest-path finder (A* algorithm) and most shaded path finder using computer-vision pre-processed data from shademap.app.
+                <br>
+                Deployed on PythonAnywhere as a dynamic web project.
+                <br>
+                Source code: <a href="https://github.com/qizheYang/ShadowWalkerTheHuntington" target="_blank">GitHub</a>.
+            </p>
+        </li>
+
+        <li>
+            <h2>Group Travel Planner</h2>
+            <p>
+                Web application for collaborative travel planning. Shared workspace with proposal voting, weather, flight, and hotel API integration.
+                <br>
+                Tech stack: React (frontend), Java (backend with servlets), MySQL (database).
+                <br>
+                Features: multithreading, authentication, friend system, live polls.
+            </p>
+        </li>
+
+        <li>
+            <h2>WeatherAPI, FlightAPI, HotelAPI</h2>
+            <p>
+                Java-based standalone APIs providing weather, flight, and hotel data.
+                <br>
+                Integrated into Group Travel Planner and tested with unit, regression, and UI test suites.
+            </p>
+        </li>
+
+        <li>
+            <h2>CS Assignments & Demos</h2>
+            <p>
+                Various projects in C++, Java, and Python, including linked list manipulation, recursive functions, OpenGL demos, and database-backed web apps.
+            </p>
+        </li>
+    </ul>
+</div>
+
+<!-- Fixed Footer Bar -->
+<div class="footer-bar">
+    <a href="logo_display.html" target="_blank">
+        <img src="yqz_logo.svg" alt="Qizhe Yang Logo">
+    </a>
+    <span>
+    Hosted on <a href="https://github.com/qizheYang/qizheYang.github.io" target="_blank">GitHub Pages</a>
+    &nbsp; | &nbsp; &copy; 2025 Qizhe Yang
+  </span>
+</div>
 
 </body>
 </html>
