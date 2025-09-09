@@ -33,7 +33,7 @@ header nav a {
     font-weight: 500;
 }
 
-/* Container (used for content pages like projects/interests) */
+/* Generic content container (used for interests, etc.) */
 .container {
     max-width: 800px;
     margin: auto;
@@ -56,13 +56,12 @@ a {
     font-weight: 500;
     transition: color 0.3s ease;
 }
-
 a:hover {
     color: #5A5087;
     text-decoration: underline;
 }
 
-/* Buttons (if needed) */
+/* Buttons */
 button {
     background-color: #39335A;
     color: white;
@@ -73,7 +72,6 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 button:hover {
     background-color: #5A5087;
 }
@@ -102,46 +100,38 @@ p {
     align-items: center;
     gap: 0.6rem;
 }
-
 .footer-bar img {
     height: 20px;
     width: 20px;
     object-fit: contain;
-    vertical-align: middle;
 }
-
 .footer-bar a {
     color: #39335A;
-    text-decoration: none;
     font-weight: 500;
 }
-
 .footer-bar a:hover {
     color: #5A5087;
     text-decoration: underline;
 }
 
-/* Project list (used in projects.html) */
+/* Project list */
 .project-list {
     list-style: none;
     padding: 0;
 }
-
 .project-list li {
     margin-bottom: 2rem;
 }
-
 .project-list h2 {
     margin-bottom: 0.5rem;
     color: #39335A;
 }
-
 .project-list p {
     margin: 0;
     line-height: 1.6;
 }
 
-/* Image gallery (used in interests) */
+/* Image gallery (interests page) */
 .img-gallery {
     display: flex;
     gap: 2rem;
@@ -149,17 +139,14 @@ p {
     justify-content: center;
     margin-top: 1rem;
 }
-
 .img-gallery div {
     text-align: center;
 }
-
 .img-gallery img {
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 .img-desc {
     font-size: 0.9rem;
     color: #666;
@@ -167,51 +154,42 @@ p {
     margin-top: 0.5rem;
 }
 
-/* Three-island grid (for index.html) */
+/* Profile grid (index.html only) */
 .profile-grid {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 3rem; /* spread out more */
+    gap: 3rem;
     max-width: 1200px;
     margin: 2rem auto;
     align-items: start;
 }
-
-/* Islands */
 .island {
     background: #fff;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
-
 .left-island {
     text-align: center;
 }
-
 .profile-img-square {
     max-width: 100%;
-    border-radius: 20px; /* rounded square */
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     margin-bottom: 1rem;
 }
-
 .motto {
     font-style: italic;
     color: #555;
 }
-
-/* Right island (Contact box) */
 .contact-box {
     border: 1px solid #ddd;
     background-color: #fafafa;
 }
-
 .contact-box h2 {
     margin-bottom: 0.8rem;
     color: #39335A;
 }
-
 .project-date {
     font-size: 0.95rem;
     color: #777;
@@ -219,16 +197,9 @@ p {
     margin-bottom: 0.8rem;
 }
 
-/* Layout for projects page */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 70px;   /* offset for header */
-    padding-bottom: 70px; /* offset for footer */
-}
+/* --- Projects page layout --- */
 
-/* Left island (TOC) */
+/* TOC (left menu) */
 .toc {
     position: fixed;
     top: 80px;
@@ -254,7 +225,6 @@ body {
 }
 .toc a {
     color: #39335A;
-    text-decoration: none;
     font-weight: 500;
 }
 .toc a:hover {
@@ -262,34 +232,28 @@ body {
     text-decoration: underline;
 }
 
-/* Main content */
+/* Main content (center) */
 .main-content {
     max-width: 700px;
-    margin: 0 240px; /* leave space for islands */
+    margin: 0 auto;
     background: white;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0,0,0,0.05);
-    min-height: 80vh;
+    min-height: 70vh;
 }
 .main-content h2 {
     margin-top: 2rem;
 }
 
-/* Right island (code box) */
+/* Code box (inline under project) */
 .code-box {
-    position: fixed;
-    top: 80px;
-    right: 20px;
-    width: 300px;
-    height: 70vh;
-    background: #1e1e1e;
-    color: #f1f1f1;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    background: #2a2a2a;
+    color: #fff;
     padding: 1rem;
-    font-family: monospace;
-    overflow-y: auto;
+    border-radius: 8px;
+    overflow-x: auto;
 }
 .code-box h2 {
     font-size: 1rem;
