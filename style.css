@@ -218,3 +218,81 @@ p {
     font-style: italic;
     margin-bottom: 0.8rem;
 }
+
+/* Layout for projects page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 70px;   /* offset for header */
+    padding-bottom: 70px; /* offset for footer */
+}
+
+/* Left island (TOC) */
+.toc {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    width: 200px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+.toc h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #39335A;
+}
+.toc ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.toc li {
+    margin-bottom: 0.6rem;
+}
+.toc a {
+    color: #39335A;
+    text-decoration: none;
+    font-weight: 500;
+}
+.toc a:hover {
+    color: #5A5087;
+    text-decoration: underline;
+}
+
+/* Main content */
+.main-content {
+    max-width: 700px;
+    margin: 0 240px; /* leave space for islands */
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    min-height: 80vh;
+}
+.main-content h2 {
+    margin-top: 2rem;
+}
+
+/* Right island (code box) */
+.code-box {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 300px;
+    height: 70vh;
+    background: #1e1e1e;
+    color: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding: 1rem;
+    font-family: monospace;
+    overflow-y: auto;
+}
+.code-box h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}

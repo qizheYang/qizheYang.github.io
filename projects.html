@@ -12,7 +12,7 @@
 <header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="files/cv.pdf" target="_blank">CV</a>
+        <a href="cv.pdf" target="_blank">CV</a>
         <a href="projects.html">Projects</a>
         <a href="skills_and_portfolio.html">Skills</a>
         <a href="additional_interests.html">Other Interests</a>
@@ -20,82 +20,91 @@
     </nav>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <h1>Projects</h1>
-    <ul class="project-list">
-        <li>
-            <h2>
-                <a href="https://walkhuntington.yangqizhe.com" target="_blank">ShadowWalker – The Huntington</a>
-            </h2>
-            <p class="project-date">Summer 2025</p>
-            <p>
-                Web app built with Python (Flask) and HTML/CSS. Features shortest-path finder (A* algorithm) and most shaded path finder using computer-vision pre-processed data from shademap.app.
-                <br>
-                Deployed on PythonAnywhere as a dynamic web project.
-                <br>
-                Source code: <a href="https://github.com/qizheYang/ShadowWalkerTheHuntington" target="_blank">GitHub</a>.
-            </p>
-        </li>
-
-        <li>
-            <h2>Group Travel Planner</h2>
-            <p class="project-date">Spring 2025</p>
-            <p>
-                Web application for collaborative travel planning. Shared workspace with proposal voting, weather, flight, and hotel API integration.
-                <br>
-                Tech stack: React (frontend), Java (backend with servlets), MySQL (database).
-                <br>
-                Features: multithreading, authentication, friend system, live polls.
-            </p>
-        </li>
-
-        <li>
-            <h2>WeatherAPI, FlightAPI, HotelAPI</h2>
-            <p class="project-date">Spring 2025</p>
-            <p>
-                Java-based standalone APIs providing weather, flight, and hotel data.
-                <br>
-                Integrated into Group Travel Planner and tested with unit, regression, and UI test suites.
-            </p>
-        </li>
-
-        <li>
-            <h2>Latin–Chinese Translation</h2>
-            <p class="project-date">Spring 2024 – Ongoing</p>
-            <p>
-                Collaborated with Professors Dr. Lucas Herchenroeder and Dr. Stefani Rebeggiani to translate Classical Chinese Christianity texts written by Jesuit Martino Martini into English.
-            </p>
-        </li>
-
-        <li>
-            <h2>PFAS Research</h2>
-            <p class="project-date">Fall 2024 – Ongoing</p>
-            <p>
-                Conducted research with Professor Dr. Massoud Pirbazari at SWAN Lab on PFAS treatment methods and future directions.
-            </p>
-        </li>
-
-        <li>
-            <h2>CS Assignments & Demos</h2>
-            <p class="project-date">2023 – 2025</p>
-            <p>
-                Various projects in C++, Java, and Python, including linked list manipulation, recursive functions, OpenGL demos, and database-backed web apps.
-            </p>
-        </li>
+<!-- Left Island: TOC -->
+<aside class="toc">
+    <h2>Contents</h2>
+    <ul>
+        <li><a href="#proj1">ShadowWalker</a></li>
+        <li><a href="#proj2">Travel Planner</a></li>
+        <li><a href="#proj3">Custom APIs</a></li>
     </ul>
+</aside>
+
+<!-- Main Content -->
+<div class="main-content">
+    <h1>Projects</h1>
+    <h2 id="proj1">ShadowWalker – The Huntington</h2>
+    <p>Web app with shortest-path finder (A*) and most shaded path finder.</p>
+
+    <h2 id="proj2">Group Travel Planner</h2>
+    <p>Collaborative planner with proposals, weather/flight/hotel APIs, multithreading, and polls.</p>
+
+    <h2 id="proj3">WeatherAPI, FlightAPI, HotelAPI</h2>
+    <p>Standalone Java APIs integrated into Travel Planner.</p>
 </div>
 
-<!-- Fixed Footer Bar -->
+<!-- Right Island: Code Display -->
+<aside class="code-box" id="codeBox">
+    <h2>Code Preview</h2>
+    <pre><code id="codeContent">// Select a project to see code</code></pre>
+</aside>
+
+<!-- Fixed Footer -->
 <div class="footer-bar">
     <a href="logo_display.html" target="_blank">
-        <img src="img/yqz_logo.svg" alt="Qizhe Yang Logo">
+        <img src="yqz_logo.svg" alt="Qizhe Yang Logo">
     </a>
     <span>
     Hosted on <a href="https://github.com/qizheYang/qizheYang.github.io" target="_blank">GitHub Pages</a>
     &nbsp; | &nbsp; &copy; 2025 Qizhe Yang
   </span>
 </div>
+
+<script>
+    const codeSnippets = {
+        proj1: `# Flask route
+@app.route('/shortest')
+def shortest():
+    return run_astar()`,
+        proj2: `// Java Servlet snippet
+@WebServlet("/createPlan")
+public class TravelPlanServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
+        // handle travel plan creation
+    }
+}`,
+        proj3: `// Java Weather API
+public class WeatherAPI {
+    public WeatherData getWeather(String city) {
+        // fetch and parse JSON
+    }
+}`
+    };
+
+    const codeContent = document.getElementById("codeContent");
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        document.querySelectorAll(".main-content h2").forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if (window.scrollY >= sectionTop) {
+                current = section.getAttribute("id");
+            }
+        });
+        if (current && codeSnippets[current]) {
+            codeContent.textContent = codeSnippets[current];
+        }
+    });
+
+    document.querySelectorAll(".toc a").forEach(link => {
+        link.addEventListener("click", (e) => {
+            const id = e.target.getAttribute("href").substring(1);
+            if (codeSnippets[id]) {
+                codeContent.textContent = codeSnippets[id];
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
