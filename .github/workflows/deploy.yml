@@ -1,33 +1,31 @@
-name: Deploy to GitHub Pages
+name: Deploy React Site
 
 on:
   push:
     branches:
-      - main  # or master if that's your default branch
-
-permissions:
-  contents: write  # REQUIRED for github-actions[bot] to push
+      - main  # whenever you push to main, rebuild & deploy
 
 jobs:
-  build-and-deploy:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout source code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: Build
+      - name: Build project
         run: npm run build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
