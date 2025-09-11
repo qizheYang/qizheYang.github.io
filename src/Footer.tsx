@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
     return (
         <div className="footer-bar">
-            <a href="/logo_display" target="_blank" rel="noopener noreferrer">
+            <a href="/img/yqz_logo.svg" target="_blank" rel="noopener noreferrer">
                 <img src="/img/yqz_logo.svg" alt="Qizhe Yang Logo" />
             </a>
             <span>

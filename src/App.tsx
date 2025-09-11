@@ -7,7 +7,6 @@ import IndexCn from "./pages/IndexCn";
 import "./App.css";
 import Skills from "./pages/Skills.tsx";
 import Interests from "./pages/Interests.tsx";
-import LogoDisplay from "./pages/LogoDisplay.tsx";
 import Projects from "./pages/Projects.tsx";
 
 const App: React.FC = () => {
@@ -21,7 +20,6 @@ const App: React.FC = () => {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/interests" element={<Interests />} />
-                    <Route path="/logo_display" element={<LogoDisplay />} />
                 </Routes>
             </main>
             <Footer />
