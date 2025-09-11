@@ -1,14 +1,19 @@
-/* ------------------------------
+/* ==============================
    Base Styles
------------------------------- */
+============================== */
+html, body, #root {
+  height: 100%; /* flex layout needs full height */
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #f4f5f7; /* soft light gray */
   color: #2e2e2e;
   line-height: 1.6;
-  margin: 0;
+  font-size: 1rem;
   padding-top: 70px;  /* offset for header */
-  padding-bottom: 70px; /* offset for footer */
 }
 
 h1, h2, h3 {
@@ -21,7 +26,7 @@ p {
   font-size: 1.05rem;
   color: #333;
 }
-where
+
 a {
   color: #5069a3;
   text-decoration: none;
@@ -32,9 +37,34 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ------------------------------
+/* ==============================
+   Layout Containers
+============================== */
+#root {
+  display: flex;
+  flex-direction: column; /* vertical stack: header → main → footer */
+}
+
+main {
+  flex: 1; /* grows to push footer down */
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* ==============================
    Header
------------------------------- */
+============================== */
 .site-header {
   position: fixed;
   top: 0;
@@ -64,20 +94,16 @@ a:hover {
   transform: translateY(-2px);
 }
 
-/* ------------------------------
+/* ==============================
    Footer
------------------------------- */
+============================== */
 .footer-bar {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background-color: #e2e6f0;
   color: #2e2e2e;
   text-align: center;
   padding: 0.8rem 1rem;
   font-size: 0.9rem;
-  z-index: 1000;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,10 +111,10 @@ a:hover {
 }
 
 .footer-bar img {
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   object-fit: contain;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
 }
 
 .footer-bar a {
@@ -105,25 +131,9 @@ a:hover {
   margin-top: 0.3rem;
 }
 
-/* ------------------------------
-   Container & Layout
------------------------------- */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: #fdfdfd;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-/* ------------------------------
+/* ==============================
    Profile Grid (Homepages)
------------------------------- */
+============================== */
 .profile-grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -144,10 +154,13 @@ section {
 }
 
 .profile-img-square {
-  max-width: 100%;
+  max-width: 200px;   /* smaller and capped */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem; /* centered */
   border-radius: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  margin-bottom: 1rem;
 }
 
 .motto {
@@ -166,9 +179,36 @@ section {
   color: #324b7c;
 }
 
-/* ------------------------------
+/* Tablet (≤ 900px) → 2-column */
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left-island {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+}
+
+/* Mobile (≤ 600px) → single column */
+@media (max-width: 600px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .island {
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-img-square {
+    max-width: 160px; /* a bit smaller on mobile */
+  }
+}
+
+/* ==============================
    Skills Page
------------------------------- */
+============================== */
 .skills-section {
   margin-bottom: 3rem;
 }
@@ -203,9 +243,9 @@ section {
   margin-bottom: 0.5rem;
 }
 
-/* ------------------------------
+/* ==============================
    Projects Page
------------------------------- */
+============================== */
 .project-list {
   list-style: none;
   padding: 0;
@@ -225,9 +265,9 @@ section {
   margin-bottom: 0.8rem;
 }
 
-/* ------------------------------
+/* ==============================
    Image Galleries
------------------------------- */
+============================== */
 .img-gallery {
   display: flex;
   gap: 1.5rem;
@@ -250,9 +290,9 @@ section {
   margin-top: 0.5rem;
 }
 
-/* ------------------------------
+/* ==============================
    Code Blocks
------------------------------- */
+============================== */
 .code-box {
   margin-top: 1rem;
   padding: 1rem;
@@ -266,4 +306,23 @@ section {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #a7b6da;
+}
+
+/* ==============================
+   Responsive Typography
+============================== */
+@media (max-width: 600px) {
+  body {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }

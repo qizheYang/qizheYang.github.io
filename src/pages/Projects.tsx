@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
                         rel="noopener noreferrer"
                     >
                         the GitHub repository
-                    </a>.
+                    </a> and choose Legacy branch to view the old code which did not use TypeScript.
                 </p>
             </section>
 
