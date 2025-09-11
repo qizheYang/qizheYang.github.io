@@ -13,7 +13,7 @@ const Index: React.FC = () => {
 
             {/* Middle Island */}
             <div className="island mid-island">
-                <h2>Thank you for viewing</h2>
+                <h2>Thank you for viewing 1111111</h2>
                 <p>
                     Motivated, Enthusiastic, Hard-Working undergraduate Computer Science student
                     at University of Southern California. <br /> <br />
