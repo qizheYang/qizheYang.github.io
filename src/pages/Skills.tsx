@@ -24,6 +24,8 @@ const Skills: React.FC = () => {
                         <p>
                             Chinese (native), English (fluent, professional), Japanese (beginner–
                             intermediate)
+                            中文（母语）、英文（流利、专业）、日语（入门至普通）
+                            中国語（母語)、英語（プロ）、日本語（初心者）
                         </p>
                     </div>
                 </div>
