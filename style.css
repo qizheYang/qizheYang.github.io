@@ -9,11 +9,11 @@
 
 body {
     font-family: "Segoe UI", sans-serif;
-    background-color: #F3D3BD; /* sand */
-    color: #333333;            /* neutral text */
+    background-color: #f4f5f7; /* soft light gray */
+    color: #2e2e2e;            /* softer dark gray */
     line-height: 1.6;
-    padding-top: 70px;   /* offset for fixed header */
-    padding-bottom: 70px; /* offset for fixed footer */
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 /* ------------------------------
@@ -24,8 +24,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #F0BF9F; /* soft peach */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #f9fafc; /* off-white */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
     z-index: 1000;
     padding: 1rem 2rem;
     display: flex;
@@ -35,11 +35,11 @@ header {
 header nav a {
     margin-left: 1.5rem;
     font-weight: 600;
-    color: #8A4639; /* chestnut */
+    color: #324b7c; /* muted navy */
     transition: color 0.3s ease;
 }
 header nav a:hover {
-    color: #A65342; /* deeper chestnut for hover */
+    color: #5069a3; /* lighter navy hover */
 }
 
 /* ------------------------------
@@ -48,10 +48,10 @@ header nav a:hover {
 .container {
     max-width: 800px;
     margin: auto;
-    background-color: #ffffff;
+    background-color: #fdfdfd; /* near-white, not pure */
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 /* Profile grid (index.html) */
@@ -65,10 +65,10 @@ header nav a:hover {
 }
 
 .island {
-    background: #ffffff;
+    background: #fdfdfd;
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .left-island {
@@ -78,7 +78,7 @@ header nav a:hover {
 .profile-img-square {
     max-width: 100%;
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     margin-bottom: 1rem;
 }
 
@@ -89,40 +89,41 @@ header nav a:hover {
 
 .contact-box {
     border: 1px solid #ddd;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
     padding: 1rem;
     border-radius: 8px;
 }
 
 .contact-box h2 {
     margin-bottom: 0.8rem;
-    color: #8A4639;
+    color: #324b7c;
 }
 
 /* ------------------------------
    Typography
 ------------------------------ */
 h1, h2, h3 {
-    color: #8A4639; /* chestnut */
+    color: #324b7c;
     margin-bottom: 1rem;
 }
 
 p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
+    color: #333; /* softer black */
 }
 
 /* ------------------------------
    Links
 ------------------------------ */
 a {
-    color: #C4653E; /* warm terracotta */
+    color: #5069a3; /* lighter navy */
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 a:hover {
-    color: #8A4639; /* chestnut hover */
+    color: #324b7c;
     text-decoration: underline;
 }
 
@@ -130,8 +131,8 @@ a:hover {
    Buttons
 ------------------------------ */
 button {
-    background-color: #C4653E; /* terracotta */
-    color: white;
+    background-color: #324b7c;
+    color: #fdfdfd;
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 5px;
@@ -140,7 +141,7 @@ button {
     transition: background-color 0.3s ease;
 }
 button:hover {
-    background-color: #8A4639; /* chestnut hover */
+    background-color: #25365d;
 }
 
 /* ------------------------------
@@ -151,8 +152,8 @@ button:hover {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #8A4639; /* chestnut */
-    color: #ffffff;
+    background-color: #e2e6f0; /* light desaturated blue-gray */
+    color: #2e2e2e;
     text-align: center;
     padding: 0.8rem 1rem;
     font-size: 0.9rem;
@@ -161,6 +162,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 0.6rem;
+    border-top: 1px solid #cbd3e3;
 }
 
 .footer-bar img {
@@ -170,11 +172,11 @@ button:hover {
 }
 
 .footer-bar a {
-    color: #ffffff;
+    color: #324b7c;
     font-weight: 600;
 }
 .footer-bar a:hover {
-    color: #F3D3BD; /* sand highlight */
+    color: #5069a3;
     text-decoration: underline;
 }
 
@@ -190,7 +192,7 @@ button:hover {
 }
 .project-list h2 {
     margin-bottom: 0.5rem;
-    color: #8A4639;
+    color: #324b7c;
 }
 .project-list p {
     margin: 0;
@@ -219,7 +221,7 @@ button:hover {
 .img-gallery img {
     max-width: 300px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 .img-desc {
     font-size: 0.9rem;
@@ -236,15 +238,15 @@ button:hover {
     top: 80px;
     left: 20px;
     width: 200px;
-    background: #ffffff;
+    background: #fdfdfd;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     padding: 1rem;
 }
 .toc h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #8A4639;
+    color: #324b7c;
 }
 .toc ul {
     list-style: none;
@@ -255,11 +257,11 @@ button:hover {
     margin-bottom: 0.6rem;
 }
 .toc a {
-    color: #C4653E;
+    color: #5069a3;
     font-weight: 600;
 }
 .toc a:hover {
-    color: #8A4639;
+    color: #324b7c;
     text-decoration: underline;
 }
 
@@ -269,10 +271,10 @@ button:hover {
 .main-content {
     max-width: 700px;
     margin: 0 auto;
-    background: #ffffff;
+    background: #fdfdfd;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
     min-height: 70vh;
 }
 .main-content h2 {
@@ -284,8 +286,8 @@ button:hover {
 ------------------------------ */
 .code-box {
     margin-top: 20px;
-    background: #2F2F2F; /* softer dark */
-    color: #ffffff;
+    background: #3a3a3a; /* dark gray, not black */
+    color: #f2f2f2;      /* off-white text */
     padding: 1rem;
     border-radius: 8px;
     overflow-x: auto;
@@ -293,5 +295,5 @@ button:hover {
 .code-box h2 {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    color: #F0BF9F; /* soft peach accent */
+    color: #a7b6da; /* subtle blue-gray accent */
 }
