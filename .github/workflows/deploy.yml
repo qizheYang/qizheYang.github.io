@@ -22,17 +22,13 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: |
-          cd react-site
-          npm ci
+        run: npm ci
 
       - name: Build
-        run: |
-          cd react-site
-          npm run build
+        run: npm run build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./react-site/dist
+          publish_dir: ./dist
