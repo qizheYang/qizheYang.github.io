@@ -1,3 +1,11 @@
+# yangqizhe.com
+
+This is the personal site of Qizhe Yang 杨淇喆, currently a University of Southern California Computer Science student, expected graduate year is 2027 with a Bachelor of Science degree.
+
+This site utilizes React, TypeScript which is built on original Vanilla HTML where you can find legacy code at legacy branch.
+
+# Original Template README
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
