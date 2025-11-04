@@ -30,6 +30,20 @@ const Interests: React.FC = () => {
                             <p className="img-desc">Fantastic Sanbaiman ending on September 5, 2025</p>
                         </div>
                     </div>
+                    <p>
+                        In November 2025, I attended the Universities of California Mahjong League Tournament in Irvine with alumni from multiple 
+                        UC campuses and USC. Won champion in this Tournament.
+                    </p>
+                    <div className="img-gallery">
+                        <div>
+                            <img src="/img/mahjong_ucml_d1" alt="UCML Day 1 Group Stage In Game" />
+                            <p className="img-desc">Me in game during Day 1 Group Stage</p>
+                        </div>
+                        <div>
+                            <img src="/img/mahjong_ucml_d2" alt="UCML Award Image" />
+                            <p className="img-desc">Holding 18000 points and the decisive 6m that helped me champion the tournament</p>
+                        </div>
+                    </div>
                 </li>
 
                 <li>
