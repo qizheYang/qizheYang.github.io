@@ -36,11 +36,11 @@ const Interests: React.FC = () => {
                     </p>
                     <div className="img-gallery">
                         <div>
-                            <img src="/img/mahjong_ucml_d1" alt="UCML Day 1 Group Stage In Game" />
+                            <img src="/img/mahjong_ucml_d1.jpeg" alt="UCML Day 1 Group Stage In Game" />
                             <p className="img-desc">Me in game during Day 1 Group Stage</p>
                         </div>
                         <div>
-                            <img src="/img/mahjong_ucml_d2" alt="UCML Award Image" />
+                            <img src="/img/mahjong_ucml_d2.jpeg" alt="UCML Award Image" />
                             <p className="img-desc">Holding 18000 points and the decisive 6m that helped me champion the tournament</p>
                         </div>
                     </div>
