@@ -41,7 +41,9 @@ const Interests: React.FC = () => {
                         </div>
                         <div>
                             <img src="/img/mahjong_ucml_d2.jpeg" alt="UCML Award Image" />
-                            <p className="img-desc">Holding 18000 points and the decisive 6m that helped me champion the tournament</p>
+                            <p className="img-desc">Holding 18000 points and the decisive 6m that helped me champion the tournament, 
+                                shot with competitor who got into semifinals
+                            </p>
                         </div>
                     </div>
                 </li>
