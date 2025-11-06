@@ -178,6 +178,13 @@ const Projects: React.FC = () => {
                         SWAN Lab
                     </a>
                     .
+                    <a
+                        href="/pdf_files/swan_pfas.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View the final report here.
+                    </a>
                 </p>
             </section>
 
