@@ -52,7 +52,8 @@ const Index: React.FC = () => {
                         </li>
                         <li>Introduction to 3-D Computer Animation (Maya)</li>
                     </ul>
-
+                    <br></br>
+                    <br></br>
                     <h3>Courses in Progress</h3>
                     <ul>
                         <li>Computer Graphics (OpenGL)</li>
