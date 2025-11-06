@@ -54,9 +54,25 @@ const Skills: React.FC = () => {
                     <div className="portfolio-block">
                         <h3>Computer Graphics</h3>
                         <p>
-                            Currently learning to use OpenGL to render 3D graphics. This is a work in
-                            progress.
+                            Studied CSCI 420 Computer Graphics at USC with Professor Oded Stein.
+                            As a beginner in this field, I created some elementary CG animation.
                         </p>
+                        <div className="video-gallery">
+                            <div className="video-item">
+                                <video controls width="100%">
+                                    <source src="/video/csci420a1.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p className="video-desc">OpenGL 3D Animation on height map, including a set of UX controls.</p>
+                            </div>
+                            <div className="video-item">
+                                <video controls width="100%">
+                                    <source src="/video/csci420a2.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p className="video-desc">OpenGL 3D Animation on roller coaster built on Catmull-Rom Splines.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

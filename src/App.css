@@ -326,3 +326,41 @@ section {
     font-size: 1.2rem;
   }
 }
+
+/* ==============================
+   Video Galleries
+============================== */
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.video-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.video-item video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  background-color: #000;
+}
+
+.video-desc {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Responsive video adjustments */
+@media (max-width: 600px) {
+  .video-gallery {
+    grid-template-columns: 1fr;
+  }
+}
