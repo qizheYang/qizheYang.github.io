@@ -45,7 +45,7 @@ const Skills: React.FC = () => {
                             <div>
                                 <img src="/img/render_sample.jpg" alt="Render Sample CTAN 464" />
                                 <p className="img-desc">
-                                    Coursework render sample exploring lighting and shading
+                                    Coursework render sample exploring lighting and shading.
                                 </p>
                             </div>
                         </div>
@@ -71,6 +71,26 @@ const Skills: React.FC = () => {
                                     Your browser does not support the video tag.
                                 </video>
                                 <p className="video-desc">OpenGL 3D Animation on roller coaster built on Catmull-Rom Splines.</p>
+                            </div>
+                        </div>
+                        <div className="img-gallery">
+                            <div>
+                                <img src="/img/csci420cga3-1.jpg" alt="Render Sample with Basic Ray Tracing" />
+                                <p className="img-desc">
+                                    Basic ray tracing product.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/img/csci420cga3-2.jpg" alt="First Iteration in Ray Tracing" />
+                                <p className="img-desc">
+                                    Improved ray tracing product with anti-aliasing, soft shadows and recursive reflections.
+                                </p>
+                            </div>
+                            <div>
+                                <img src="/img/csci420cga3-3.jpg" alt="Second Iteration in Ray Tracing" />
+                                <p className="img-desc">
+                                    Greatly improved ray tracing product with Monte-Carlo coloring, refering to <a href="https://odedstein.com/teaching/hs-2025-csci-420/assign3/extension/index.html">CSCI 420 Fall 2025 Course Website</a>.
+                                </p>
                             </div>
                         </div>
                     </div>
