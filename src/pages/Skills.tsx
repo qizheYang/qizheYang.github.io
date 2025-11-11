@@ -89,7 +89,7 @@ const Skills: React.FC = () => {
                             <div>
                                 <img src="/img/csci420cga3-3.jpg" alt="Second Iteration in Ray Tracing" />
                                 <p className="img-desc">
-                                    Greatly improved ray tracing product with Monte-Carlo coloring, refering to <a href="https://odedstein.com/teaching/hs-2025-csci-420/assign3/extension/index.html">CSCI 420 Fall 2025 Course Website</a>.
+                                    Greatly improved ray tracing product with Monte-Carlo coloring, referring to <a href="https://odedstein.com/teaching/hs-2025-csci-420/assign3/extension/index.html">CSCI 420 Fall 2025 Course Website</a>.
                                 </p>
                             </div>
                         </div>
