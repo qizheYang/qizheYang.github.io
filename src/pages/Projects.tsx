@@ -183,8 +183,8 @@ const Projects: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        View the final report here.
-                    </a> Or visit the SWAN Lab website above.
+                         View the final report here.
+                    </a> Or visit the SWAN Lab website above and see No. 34.
                 </p>
             </section>
 
