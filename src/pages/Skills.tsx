@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
                 <div className="skills-grid">
                     <div className="skill-card">
                         <h3>Programming Languages</h3>
-                        <p>C++, Python, Java, HTML, CSS, JavaScript, C, SQL</p>
+                        <p>C++ (mainly), Python, Java, HTML, CSS, JavaScript, TypeScript, C, SQL, AT&T Assembly</p>
                     </div>
                     <div className="skill-card">
                         <h3>Tools & Platforms</h3>
@@ -40,6 +40,8 @@ const Skills: React.FC = () => {
                         <p>
                             Experience with Autodesk Maya for modeling, texturing, and rendering.
                             Applied 3D animation minor coursework into technical and creative projects.
+                            Class with <a href="https://www.imdb.com/name/nm1220967/">Alessandro Jacomini</a>. 
+                            see his <a href="https://cinema.usc.edu/faculty/profile.cfm?id=67936">USC site</a>.
                         </p>
                         <div className="img-gallery">
                             <div>
@@ -49,12 +51,35 @@ const Skills: React.FC = () => {
                                 </p>
                             </div>
                         </div>
+                        <div className="video-gallery">
+                            <div className="video-item">
+                                <video controls width="100%">
+                                    <source src="/video/ctan464_final1.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p className="video-desc">Maya Arnold render of "Dad" thinking in his office. Various lights are used.</p>
+                            </div>
+                            <div className="video-item">
+                                <video controls width="100%">
+                                    <source src="/video/ctan464_final2.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p className="video-desc">Maya Arnold render of "Drew" talking to "Dad" in the office. Various lights are used.</p>
+                            </div>
+                            <div className="video-item">
+                                <video controls width="100%">
+                                    <source src="/video/ctan464_final3.mp4" type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p className="video-desc">Maya Arnold render of "Drew" walking and talking to phone outside restaurant. Various lights are used.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="portfolio-block">
                         <h3>Computer Graphics</h3>
                         <p>
-                            Studied CSCI 420 Computer Graphics at USC with Professor Oded Stein.
+                            Studied CSCI 420 Computer Graphics at USC with <a href="odedstein.com">Professor Oded Stein</a>.
                             As a beginner in this field, I created some elementary CG animation.
                         </p>
                         <div className="video-gallery">
@@ -93,6 +118,13 @@ const Skills: React.FC = () => {
                                 </p>
                             </div>
                         </div>
+                        <p>
+                            Talk is cheap, show me your
+                            <a href="https://github.com/qizheYang/usc_csci420_f25_a1"> Height Map</a>,
+                            <a href="https://github.com/qizheYang/usc_csci420_f25_a2"> Roller Coaster</a>,
+                            <a href="https://github.com/qizheYang/usc_csci420_f25_a3"> Ray Tracer</a>. 
+                            Click to view code.
+                        </p>
                     </div>
                 </div>
             </section>

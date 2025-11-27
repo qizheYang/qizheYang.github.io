@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Live App
+                        Live App - Please ignore safety warnings
                     </a>
                 </p>
 
