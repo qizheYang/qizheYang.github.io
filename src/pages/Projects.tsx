@@ -83,11 +83,11 @@ const Projects: React.FC = () => {
                 <p>
                     Source:{" "}
                     <a
-                        href="https://github.com/Daniel0701/CSCI201-Final-Project"
+                        href="https://github.com/qizheYang/usc_csci201_final_project"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        GitHub Repo
+                        GitHub Repo (copy)
                     </a>
                 </p>
 
