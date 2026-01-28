@@ -8,6 +8,7 @@ import "./App.css";
 import Skills from "./pages/Skills.tsx";
 import Interests from "./pages/Interests.tsx";
 import Projects from "./pages/Projects.tsx";
+import Games from "./pages/Games.tsx";
 
 const App: React.FC = () => {
     return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/interests" element={<Interests />} />
+                    <Route path="/games" element={<Games />} />
                 </Routes>
             </main>
             <Footer />
