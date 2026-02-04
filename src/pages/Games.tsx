@@ -36,6 +36,21 @@ const Games: React.FC = () => {
                         </p>
                     </div>
                 </a>
+
+                <a href="/game/2048/" className="game-card">
+                    <img
+                        src="/game/2048/icons/Icon-192.png"
+                        alt="2048 Magicful Edition"
+                        className="game-icon"
+                    />
+                    <div className="game-info">
+                        <h2>2048 Magicful Edition</h2>
+                        <p>
+                            The classic 2048 puzzle game with a magical twist.
+                            Slide tiles, combine numbers, and reach 2048!
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     );
