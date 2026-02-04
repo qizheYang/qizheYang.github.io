@@ -47,7 +47,7 @@ const Games: React.FC = () => {
                         <h2>2048 Magicful Edition</h2>
                         <p>
                             The classic 2048 puzzle game with a magical twist.
-                            Slide tiles, combine numbers, and reach 2048!
+                            Slide tiles, combine numbers, and reach 2048!!
                         </p>
                     </div>
                 </a>
