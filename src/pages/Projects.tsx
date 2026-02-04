@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
                 <h2>This Website (yangqizhe.com)</h2>
                 <p>
                     A personal site built with React, TypeScript, and Vite. <br/>
-                    Hosted on GitHub Pages. <br/>
+                    Hosted on my own servers of Digital Ocean. <br/>
                     What is not in my CV is here. <br/> <br/>
                     To view the full source code of this website, please visit{" "}
                     <a
@@ -56,7 +56,7 @@ const Projects: React.FC = () => {
                     </a>{" "}
                     |{" "}
                     <a
-                        href="https://walkhuntington.yangqizhe.com"
+                        href="https://yangqizhe.com/huntingtonmap"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
