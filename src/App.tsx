@@ -1,31 +1,32 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { LanguageProvider } from "./context/LanguageContext";
 import Header from "./Header";
 import Footer from "./Footer";
 import Index from "./pages/Index";
-import IndexCn from "./pages/IndexCn";
+import Projects from "./pages/Projects";
+import Skills from "./pages/Skills";
+import Games from "./pages/Games";
+import Interests from "./pages/Interests";
 import "./App.css";
-import Skills from "./pages/Skills.tsx";
-import Interests from "./pages/Interests.tsx";
-import Projects from "./pages/Projects.tsx";
-import Games from "./pages/Games.tsx";
 
 const App: React.FC = () => {
     return (
-        <Router>
-            <Header />
-            <main>
-                <Routes>
-                    <Route path="/" element={<Index />} />
-                    <Route path="/index-cn" element={<IndexCn />} />
-                    <Route path="/projects" element={<Projects />} />
-                    <Route path="/skills" element={<Skills />} />
-                    <Route path="/interests" element={<Interests />} />
-                    <Route path="/game" element={<Games />} />
-                </Routes>
-            </main>
-            <Footer />
-        </Router>
+        <LanguageProvider>
+            <Router>
+                <Header />
+                <main>
+                    <Routes>
+                        <Route path="/" element={<Index />} />
+                        <Route path="/projects" element={<Projects />} />
+                        <Route path="/skills" element={<Skills />} />
+                        <Route path="/interests" element={<Interests />} />
+                        <Route path="/game" element={<Games />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </Router>
+        </LanguageProvider>
     );
 };
 

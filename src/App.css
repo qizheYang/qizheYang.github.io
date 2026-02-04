@@ -426,3 +426,375 @@ section {
     height: 100px;
   }
 }
+
+/* ==============================
+   Responsive Header / Hamburger Menu
+============================== */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #324b7c;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-toggle.open .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-toggle.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-bar {
+    justify-content: flex-end;
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #f9fafc;
+    padding: 1rem 0;
+    gap: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+
+  .nav-links.open {
+    max-height: 400px;
+    padding: 1rem 0;
+  }
+
+  .nav-links a {
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #e2e6f0;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .lang-toggle {
+    width: 100%;
+    border-bottom: none;
+  }
+}
+
+/* ==============================
+   Language Toggle Button
+============================== */
+.lang-toggle {
+  background: transparent;
+  border: 1px solid #324b7c;
+  color: #324b7c;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-toggle:hover {
+  background: #324b7c;
+  color: #fdfdfd;
+}
+
+/* ==============================
+   Hero Section (Index Page)
+============================== */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 700px;
+}
+
+.hero-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-text h1 {
+  margin-bottom: 0.4rem;
+  font-size: 2.2rem;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.4rem;
+}
+
+.hero-motto {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #324b7c;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #324b7c;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.social-icons a:hover {
+  background: #324b7c;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* ==============================
+   Highlight Cards
+============================== */
+.highlight-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.highlight-card {
+  background: #fafbfc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #324b7c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.highlight-card h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.8rem;
+  color: #324b7c;
+}
+
+.highlight-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.card-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #5069a3;
+  margin-top: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.card-link:hover {
+  color: #324b7c;
+}
+
+@media (max-width: 900px) {
+  .highlight-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .highlight-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-card {
+    padding: 1.2rem;
+  }
+}
+
+/* ==============================
+   Course Toggle (Collapsible)
+============================== */
+.course-toggle-btn {
+  background: transparent;
+  border: 1px solid #324b7c;
+  color: #324b7c;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.course-toggle-btn:hover {
+  background: #324b7c;
+  color: #fdfdfd;
+}
+
+.course-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.course-list.expanded {
+  max-height: 600px;
+}
+
+.course-list h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  color: #324b7c;
+}
+
+.course-list ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.course-list li {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+/* ==============================
+   CTA Section
+============================== */
+.cta-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  background-color: #324b7c;
+  color: #fdfdfd;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #324b7c;
+}
+
+.cta-button:hover {
+  background-color: #25365d;
+  border-color: #25365d;
+  text-decoration: none;
+  color: #fdfdfd;
+  transform: translateY(-2px);
+}
+
+.cta-button-outline {
+  background: transparent;
+  color: #324b7c;
+}
+
+.cta-button-outline:hover {
+  background: #324b7c;
+  color: #fdfdfd;
+}
+
+@media (max-width: 600px) {
+  .cta-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: 80%;
+    text-align: center;
+  }
+}
