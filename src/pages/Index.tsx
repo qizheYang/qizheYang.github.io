@@ -77,12 +77,15 @@ const Index: React.FC = () => {
                             <li>{t("3D Computer Animation (Maya)", "3D计算机动画（Maya）")}</li>
                             <li>{t("Calculus & Linear Algebra", "微积分与线性代数")}</li>
                             <li>{t("Physics & Probability Theory", "物理与概率论")}</li>
-                        </ul>
-                        <h4>{t("In Progress", "正在修读")}</h4>
-                        <ul>
                             <li>{t("Computer Graphics (OpenGL)", "计算机图形学（OpenGL）")}</li>
                             <li>{t("Artificial Intelligence (Python)", "人工智能（Python）")}</li>
                             <li>{t("Computer Systems (C, Assembly)", "计算机系统（C、汇编）")}</li>
+                        </ul>
+                        <h4>{t("In Progress", "正在修读")}</h4>
+                        <ul>
+                            <li>{t("Machine Learning", "机器学习")}</li>
+                            <li>{t("Internetworking", "网络互联")}</li>
+                            <li>{t("Multi-platform Development (Flutter/Dart)", "跨平台开发（Flutter/Dart）")}</li>
                         </ul>
                     </div>
                 </div>
@@ -90,6 +93,12 @@ const Index: React.FC = () => {
                 {/* Experience Card */}
                 <div className="highlight-card">
                     <h2>{t("Experience", "工作经历")}</h2>
+                    <p>
+                        <strong>BMW</strong>
+                        <br />
+                        {t("Jan 2026 - Present", "2026年1月 - 至今")}
+                    </p>
+                    <hr />
                     <p>
                         <strong>{t("The Huntington", "亨廷顿图书馆")}</strong>
                         <br />
