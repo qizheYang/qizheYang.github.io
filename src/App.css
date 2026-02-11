@@ -483,12 +483,12 @@ section {
 
   .nav-links {
     position: fixed;
-    top: 60px;
+    top: 70px;
     left: 0;
     right: 0;
     flex-direction: column;
     background: #f9fafc;
-    padding: 1rem 0;
+    padding: 0;
     gap: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     max-height: 0;
@@ -497,7 +497,7 @@ section {
   }
 
   .nav-links.open {
-    max-height: 400px;
+    max-height: 500px;
     padding: 1rem 0;
   }
 
@@ -508,13 +508,15 @@ section {
     border-bottom: 1px solid #e2e6f0;
   }
 
-  .nav-links a:last-child {
+  .nav-links a:last-of-type {
     border-bottom: none;
   }
 
   .lang-toggle {
     width: 100%;
-    border-bottom: none;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 0;
   }
 }
 
