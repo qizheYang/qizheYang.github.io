@@ -43,6 +43,57 @@ const Projects: React.FC = () => {
                 </p>
             </section>
 
+            {/* rehydratedwater.com */}
+            <section id="rehydratedwater">
+                <h2>rehydratedwater.com</h2>
+                <p>
+                    {t(
+                        "A gaming portal with a retro-futuristic cyberpunk aesthetic, hosting casual and multiplayer games.",
+                        "一个具有复古未来主义赛博朋克风格的游戏门户，托管休闲和多人游戏。"
+                    )}
+                </p>
+                <ul>
+                    <li>{t(
+                        "2048 Magicful Edition – the classic number puzzle with a magical twist",
+                        "2048 魔法版 – 带有魔法元素的经典数字益智游戏"
+                    )}</li>
+                    <li>{t(
+                        "Cidle – Chinese Wordle character guessing game",
+                        "Cidle – 中文 Wordle 猜字游戏"
+                    )}</li>
+                    <li>{t(
+                        "A* Pathfinding – real-time algorithm visualization",
+                        "A* 寻路 – 实时算法可视化"
+                    )}</li>
+                    <li>{t(
+                        "Mahjong – multiplayer virtual mahjong table",
+                        "麻将 – 多人虚拟麻将桌"
+                    )}</li>
+                    <li>{t(
+                        "Guandan – multiplayer Chinese poker card game",
+                        "掼蛋 – 多人中国扑克牌游戏"
+                    )}</li>
+                </ul>
+                <p>
+                    {t("Source:", "源代码：")}{" "}
+                    <a
+                        href="https://github.com/qizheYang/rehydratedwater.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {t("GitHub Repo", "GitHub 仓库")}
+                    </a>{" "}
+                    |{" "}
+                    <a
+                        href="https://rehydratedwater.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        {t("Live Site", "在线访问")}
+                    </a>
+                </p>
+            </section>
+
             {/* Project 1 */}
             <section id="shadowwalker">
                 <h2>Shadow Walker – {t("The Huntington", "亨廷顿")}</h2>

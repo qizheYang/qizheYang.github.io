@@ -7,10 +7,16 @@ const Games: React.FC = () => {
     return (
         <div className="container">
             <h1>{t("Games", "游戏")}</h1>
-            <p>{t("Interactive games and visualizations I've built.", "我制作的交互式游戏和可视化项目。")}</p>
+            <p>
+                {t("Interactive games and visualizations I've built. Now hosted at", "我制作的交互式游戏和可视化项目。现托管于")}{" "}
+                <a href="https://rehydratedwater.com" target="_blank" rel="noopener noreferrer">
+                    rehydratedwater.com
+                </a>
+                {t(".", "。")}
+            </p>
 
             <div className="games-grid">
-                <a href="/game/pathfinding/" className="game-card">
+                <a href="https://rehydratedwater.com/pathfinding/" className="game-card" target="_blank" rel="noopener noreferrer">
                     <img
                         src="/game/pathfinding/icons/Icon-192.png"
                         alt={t("A* Pathfinding Game", "A* 寻路游戏")}
@@ -27,7 +33,7 @@ const Games: React.FC = () => {
                     </div>
                 </a>
 
-                <a href="/game/cidle/" className="game-card">
+                <a href="https://rehydratedwater.com/cidle/" className="game-card" target="_blank" rel="noopener noreferrer">
                     <img
                         src="/game/cidle/icons/Icon-192.png"
                         alt={t("Cidle - Chinese Wordle", "Cidle - 中文猜词")}
@@ -44,7 +50,7 @@ const Games: React.FC = () => {
                     </div>
                 </a>
 
-                <a href="/game/2048/" className="game-card">
+                <a href="https://rehydratedwater.com/2048/" className="game-card" target="_blank" rel="noopener noreferrer">
                     <img
                         src="/game/2048/icons/Icon-192.png"
                         alt={t("2048 Magicful Edition", "2048 魔法版")}
@@ -56,6 +62,30 @@ const Games: React.FC = () => {
                             {t(
                                 "The classic 2048 puzzle game with a magical twist. Slide tiles, combine numbers, and reach 2048!!",
                                 "经典 2048 益智游戏的魔法版本。滑动方块，合并数字，达到 2048！！"
+                            )}
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://rehydratedwater.com/mahjong/" className="game-card" target="_blank" rel="noopener noreferrer">
+                    <div className="game-info">
+                        <h2>{t("Mahjong", "麻将")}</h2>
+                        <p>
+                            {t(
+                                "Multiplayer virtual mahjong table. Play the traditional tile game online with friends.",
+                                "多人虚拟麻将桌。与朋友在线玩传统麻将。"
+                            )}
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://rehydratedwater.com/guandan/" className="game-card" target="_blank" rel="noopener noreferrer">
+                    <div className="game-info">
+                        <h2>{t("Guandan", "掼蛋")}</h2>
+                        <p>
+                            {t(
+                                "Multiplayer Chinese poker card game. Play online with friends.",
+                                "多人中国扑克牌游戏。与朋友在线对战。"
                             )}
                         </p>
                     </div>
