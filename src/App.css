@@ -794,6 +794,30 @@ section {
   color: #666;
 }
 
+.ib-details-toggle {
+  background: none;
+  border: none;
+  color: #5069a3;
+  font-size: 0.82rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 0.4rem;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+.ib-details-toggle:hover {
+  color: #324b7c;
+}
+
+.ib-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.ib-details.expanded {
+  max-height: 80px;
+}
+
 .highlight-card hr {
   border: none;
   border-top: 1px solid #e0e4ec;

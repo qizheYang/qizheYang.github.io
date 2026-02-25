@@ -4,6 +4,7 @@ import { useLanguage } from "../context/LanguageContext";
 
 const Index: React.FC = () => {
     const [showCourses, setShowCourses] = useState(false);
+    const [showIBDetails, setShowIBDetails] = useState(false);
     const { t } = useLanguage();
 
     return (
@@ -20,8 +21,8 @@ const Index: React.FC = () => {
                         <h1>{t("Qizhe Yang", "杨淇喆")}</h1>
                         <p className="hero-tagline">
                             {t(
-                                "CS Student | 3D Animation Minor | Vibe Coder | USC Viterbi",
-                                "计算机科学 | 3D动画辅修 | AI 协作开发者 | 南加大维特比工程学院"
+                                "CS @ USC Viterbi | 3D Animation Minor | Vibe Coder",
+                                "南加大维特比 计算机科学 | 3D动画辅修 | AI 协作开发者"
                             )}
                         </p>
                         <p className="hero-motto">{t("Virtue Bears All Things", "厚德载物")}</p>
@@ -97,16 +98,23 @@ const Index: React.FC = () => {
                         <div className="edu-info">
                             <strong>{t("Shanghai Pinghe Bilingual School", "上海市平和双语学校")}</strong>
                             <br />
-                            {t("IB Bilingual Diploma — 41/45", "IB 双语文凭 — 41/45")}
+                            {t("IB Bilingual Diploma, 41/45", "IB 双语文凭，41/45")}
                             <br />
                             {t("Class of 2023", "2023届")}
-                            <br />
-                            <span className="edu-ib-details">
-                                {t(
-                                    "Math HL 7 · English B SL 7 · Chinese A SL 6 · Geography HL 6 · Chemistry HL 6 · Physics HL 6 · EE/TOK 3",
-                                    "数学 HL 7 · 英语 B SL 7 · 中文 A SL 6 · 地理 HL 6 · 化学 HL 6 · 物理 HL 6 · EE/TOK 3"
-                                )}
-                            </span>
+                            <button
+                                className="ib-details-toggle"
+                                onClick={() => setShowIBDetails(!showIBDetails)}
+                            >
+                                {showIBDetails ? t("Hide Scores", "收起成绩") : t("View Scores", "查看成绩")}
+                            </button>
+                            <div className={`ib-details ${showIBDetails ? "expanded" : ""}`}>
+                                <span className="edu-ib-details">
+                                    {t(
+                                        "Math HL 7 · English B SL 7 · Chinese A SL 6 · Geography HL 6 · Chemistry HL 6 · Physics HL 6 · EE/TOK 3",
+                                        "数学 HL 7 · 英语 B SL 7 · 中文 A SL 6 · 地理 HL 6 · 化学 HL 6 · 物理 HL 6 · EE/TOK 3"
+                                    )}
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -131,8 +139,8 @@ const Index: React.FC = () => {
                     </p>
                     <p>
                         {t(
-                            "Built Shadow Walker pathfinding app, ArcGIS web tools, and Python automation scripts. Attended Esri User Conference 2025.",
-                            "开发了 Shadow Walker 路径规划应用、ArcGIS 网络工具及 Python 自动化脚本。参加了 Esri 2025 用户大会。"
+                            "Developed Shadow Walker pathfinding app, ArcGIS web tools, and Python automation. Presented at Esri User Conference 2025.",
+                            "开发了 Shadow Walker 路径规划应用、ArcGIS 网络工具及 Python 自动化脚本。在 Esri 2025 用户大会上展示。"
                         )}
                     </p>
                     <Link to="/projects" className="card-link">
@@ -147,8 +155,8 @@ const Index: React.FC = () => {
                         <strong>Shadow Walker - {t("The Huntington", "亨廷顿")}</strong>
                         <br />
                         {t(
-                            "Interactive shade-aware pathfinding using A* algorithm and computer vision processed maps.",
-                            "基于A*算法和计算机视觉处理地图的交互式阴凉路径规划应用。"
+                            "Shade-aware pathfinding powered by A* and computer vision. Walk the coolest route through The Huntington's gardens.",
+                            "基于 A* 算法与计算机视觉的阴凉路径规划。在亨廷顿花园中找到最凉爽的路线。"
                         )}
                     </p>
                     <a
