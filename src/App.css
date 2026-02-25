@@ -366,65 +366,131 @@ section {
 }
 
 /* ==============================
-   Games Page
+   Category Filter
 ============================== */
-.games-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
 
-.game-card {
+.category-filter-btn {
+  background: transparent;
+  border: 1px solid #324b7c;
+  color: #324b7c;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-filter-btn:hover {
+  background: #e8ecf4;
+}
+
+.category-filter-btn.active {
+  background: #324b7c;
+  color: #fdfdfd;
+}
+
+/* ==============================
+   Project Cards
+============================== */
+.projects-grid {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  background: #fdfdfd;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fafbfc;
+  padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #324b7c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.game-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  text-decoration: none;
-}
-
-.game-icon {
-  width: 120px;
-  height: 120px;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
-}
-
-.game-info {
-  text-align: center;
-}
-
-.game-info h2 {
-  margin-bottom: 0.8rem;
+.project-card-header h3 {
+  margin-bottom: 0.5rem;
   color: #324b7c;
 }
 
-.game-info p {
-  color: #555;
-  font-size: 0.95rem;
-  margin-bottom: 0;
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 
-@media (max-width: 600px) {
-  .games-grid {
-    grid-template-columns: 1fr;
-  }
+.tech-tag {
+  display: inline-block;
+  background: #e8ecf4;
+  color: #324b7c;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
 
-  .game-icon {
-    width: 100px;
-    height: 100px;
-  }
+.vibe-badge {
+  display: inline-block;
+  background: #d4edda;
+  color: #155724;
+  padding: 0.15rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.project-card-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.6rem;
+}
+
+.project-card-links {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.project-expand-btn {
+  background: transparent;
+  border: 1px solid #324b7c;
+  color: #324b7c;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.project-expand-btn:hover {
+  background: #324b7c;
+  color: #fdfdfd;
+}
+
+.project-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.project-detail.expanded {
+  max-height: 2000px;
+}
+
+.project-detail ul {
+  padding-left: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.project-detail li {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.3rem;
 }
 
 /* ==============================

@@ -15,10 +15,14 @@ const Footer: React.FC = () => {
                 >
           GitHub Pages
         </a>
-                &nbsp; | &nbsp; &copy; 2025 Qizhe Yang
+                &nbsp; | &nbsp; &copy; 2026 Qizhe Yang
         <br />
         <span className="footer-credits">
-          Built with{" "}
+          Vibe coded with{" "}
+            <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">
+            Claude
+          </a>
+          {" "}| Built with{" "}
             <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">
             React
           </a>

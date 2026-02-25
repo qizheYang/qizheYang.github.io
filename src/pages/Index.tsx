@@ -20,8 +20,8 @@ const Index: React.FC = () => {
                         <h1>{t("Qizhe Yang", "杨淇喆")}</h1>
                         <p className="hero-tagline">
                             {t(
-                                "CS Student | 3D Animation Minor | USC Viterbi",
-                                "计算机科学 | 3D动画辅修 | 南加大维特比工程学院"
+                                "CS Student | 3D Animation Minor | Vibe Coder | USC Viterbi",
+                                "计算机科学 | 3D动画辅修 | AI 协作开发者 | 南加大维特比工程学院"
                             )}
                         </p>
                         <p className="hero-motto">{t("Virtue Bears All Things", "厚德载物")}</p>
@@ -95,6 +95,8 @@ const Index: React.FC = () => {
                     <h2>{t("Experience", "工作经历")}</h2>
                     <p>
                         <strong>BMW</strong>
+                        <br />
+                        {t("AI Research Intern", "AI 研究实习生")}
                         <br />
                         {t("Jan 2026 - Present", "2026年1月 - 至今")}
                     </p>

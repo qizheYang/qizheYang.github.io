@@ -37,9 +37,8 @@ const Header: React.FC = () => {
                         {t("CV", "简历")}
                     </a>
                     <Link to="/projects" onClick={closeMenu}>{t("Projects", "项目")}</Link>
-                    <Link to="/skills" onClick={closeMenu}>{t("Skills", "技能")}</Link>
-                    <Link to="/game" onClick={closeMenu}>{t("Games", "游戏")}</Link>
-                    <Link to="/interests" onClick={closeMenu}>{t("Other Interests", "其他兴趣")}</Link>
+                    <Link to="/portfolio" onClick={closeMenu}>{t("Portfolio", "作品集")}</Link>
+                    <Link to="/about" onClick={closeMenu}>{t("About", "关于")}</Link>
                     <button className="lang-toggle" onClick={toggleLanguage}>
                         {lang === "en" ? "中文" : "English"}
                     </button>
