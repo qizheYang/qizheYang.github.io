@@ -51,15 +51,18 @@ const Index: React.FC = () => {
                 {/* Education Card */}
                 <div className="highlight-card">
                     <h2>{t("Education", "教育背景")}</h2>
-                    <p>
-                        <strong>{t("USC Viterbi School of Engineering", "南加州大学维特比工程学院")}</strong>
-                        <br />
-                        {t("B.S. Computer Science, Junior", "计算机科学学士，大三在读")}
-                        <br />
-                        {t("Minor: 3D Animation (Cinematic Arts)", "辅修：3D动画（电影艺术学院）")}
-                        <br />
-                        GPA: 3.72
-                    </p>
+                    <div className="edu-entry">
+                        <img src="/img/usc_viterbi_logo.png" alt="USC Viterbi" className="edu-logo" />
+                        <div className="edu-info">
+                            <strong>{t("USC Viterbi School of Engineering", "南加州大学维特比工程学院")}</strong>
+                            <br />
+                            {t("B.S. Computer Science, Junior", "计算机科学学士，大三在读")}
+                            <br />
+                            {t("Minor: 3D Animation (Cinematic Arts)", "辅修：3D动画（电影艺术学院）")}
+                            <br />
+                            GPA: 3.72
+                        </div>
+                    </div>
                     <button
                         className="course-toggle-btn"
                         onClick={() => setShowCourses(!showCourses)}
@@ -87,6 +90,24 @@ const Index: React.FC = () => {
                             <li>{t("Internetworking", "网络互联")}</li>
                             <li>{t("Multi-platform Development (Flutter/Dart)", "跨平台开发（Flutter/Dart）")}</li>
                         </ul>
+                    </div>
+                    <hr />
+                    <div className="edu-entry">
+                        <img src="/img/pinghe_logo.png" alt="Shanghai Pinghe School" className="edu-logo" />
+                        <div className="edu-info">
+                            <strong>{t("Shanghai Pinghe Bilingual School", "上海市平和双语学校")}</strong>
+                            <br />
+                            {t("IB Bilingual Diploma — 41/45", "IB 双语文凭 — 41/45")}
+                            <br />
+                            {t("Class of 2023", "2023届")}
+                            <br />
+                            <span className="edu-ib-details">
+                                {t(
+                                    "Math HL 7 · English B SL 7 · Chinese A SL 6 · Geography HL 6 · Chemistry HL 6 · Physics HL 6 · EE/TOK 3",
+                                    "数学 HL 7 · 英语 B SL 7 · 中文 A SL 6 · 地理 HL 6 · 化学 HL 6 · 物理 HL 6 · EE/TOK 3"
+                                )}
+                            </span>
+                        </div>
                     </div>
                 </div>
 

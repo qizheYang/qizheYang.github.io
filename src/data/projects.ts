@@ -58,6 +58,7 @@ export const PROJECTS: Project[] = [
         techStack: ["Flutter", "Dart"],
         vibeCoded: true,
         links: [
+            { labelEn: "Play Online", labelCn: "在线游玩", url: "https://rehydratedwater.com/mahjong", external: true },
             { labelEn: "GitHub Repo", labelCn: "GitHub 仓库", url: "https://github.com/qizheYang/Mahjong_VibeCoding", external: true },
         ],
         codeBlock: {
@@ -152,6 +153,7 @@ export const PROJECTS: Project[] = [
         techStack: ["React", "TypeScript", "Vite"],
         vibeCoded: true,
         links: [
+            { labelEn: "Live Site", labelCn: "在线访问", url: "https://yangqizhe.com", external: true },
             { labelEn: "GitHub Repo", labelCn: "GitHub 仓库", url: "https://github.com/qizheYang/qizheYang.github.io", external: true },
         ],
     },
