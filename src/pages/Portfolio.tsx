@@ -214,6 +214,30 @@ const Portfolio: React.FC = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Fun Projects */}
+            <section className="skills-section">
+                <h2>{t("Fun Projects", "趣味项目")}</h2>
+                <div className="project-list">
+                    <div className="portfolio-block">
+                        <h3>{t("EALC 110 — Final Project", "EALC 110 — 期末项目")}</h3>
+                        <p>
+                            {t(
+                                "A fun video project from my East Asian Languages & Cultures class — completely unrelated to my major, but a great creative experience.",
+                                "东亚语言与文化课的趣味视频项目——与我的专业完全无关，但是一次很棒的创意体验。"
+                            )}
+                        </p>
+                        <div className="video-gallery">
+                            <div className="video-item">
+                                <video controls width="100%">
+                                    <source src="/video/ealc110_final_project.mp4" type="video/mp4" />
+                                    {t("Your browser does not support the video tag.", "您的浏览器不支持视频标签。")}
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     );
 };
