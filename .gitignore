@@ -10,5 +10,6 @@ dist/
 
 # misc
 .DS_Store
+._*
 fix-game-paths.sh
 /huntingtonmap

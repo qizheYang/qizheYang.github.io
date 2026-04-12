@@ -34,6 +34,22 @@ const Portfolio: React.FC = () => {
                                 </p>
                             </div>
                         </div>
+                        <h3>{t("CTAN 454 — Final Project", "CTAN 454 — 期末项目")}</h3>
+                        <div className="video-gallery">
+                            <div className="video-item">
+                                <video controls width="100%">
+                                    <source src="/video/ctan454_final_project.mp4" type="video/mp4" />
+                                    <source src="/video/ctan454_final_project.mov" type="video/quicktime" />
+                                    {t("Your browser does not support the video tag.", "您的浏览器不支持视频标签。")}
+                                </video>
+                                <p className="video-desc">{t(
+                                    "CTAN 454 final project.",
+                                    "CTAN 454 期末项目。"
+                                )}</p>
+                            </div>
+                        </div>
+
+                        <h3>{t("CTAN 464 — Final Renders", "CTAN 464 — 期末渲染")}</h3>
                         <div className="video-gallery">
                             <div className="video-item">
                                 <video controls width="100%">
