@@ -61,7 +61,7 @@ const Index: React.FC = () => {
                             <br />
                             {t("Minor: 3D Animation (Cinematic Arts)", "辅修：3D动画（电影艺术学院）")}
                             <br />
-                            GPA: 3.77
+                            GPA: 3.72
                         </div>
                     </div>
                     <button
@@ -84,15 +84,12 @@ const Index: React.FC = () => {
                             <li>{t("Computer Graphics (OpenGL)", "计算机图形学（OpenGL）")}</li>
                             <li>{t("Artificial Intelligence (Python)", "人工智能（Python）")}</li>
                             <li>{t("Computer Systems (C, Assembly)", "计算机系统（C、汇编）")}</li>
-                            <li>{t("Machine Learning", "机器学习")}</li>
-                            <li>{t("Internetworking", "网络互联")}</li>
-                            <li>{t("Multi-platform Development (Flutter/Dart)", "跨平台开发（Flutter/Dart）")}</li>
                         </ul>
                         <h4>{t("In Progress", "正在修读")}</h4>
                         <ul>
-                            <li>{t("Operating Systems", "操作系统")}</li>
-                            <li>{t("Software Engineering", "软件工程")}</li>
-                            <li>{t("AI in Cinematics", "电影艺术中的人工智能")}</li>
+                            <li>{t("Machine Learning", "机器学习")}</li>
+                            <li>{t("Internetworking", "网络互联")}</li>
+                            <li>{t("Multi-platform Development (Flutter/Dart)", "跨平台开发（Flutter/Dart）")}</li>
                         </ul>
                     </div>
                     <hr />
